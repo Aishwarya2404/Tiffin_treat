@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_items"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="#ff3333">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:contentDescription="header"
+        android:background="@drawable/curve_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:transitionName="tvLogin"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bgHeader"
+            android:scrollbarThumbVertical="@drawable/scroll_style"
+
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/choose_img_btn"
+                            android:layout_gravity="center"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/uisquare_reg"
+                            android:text="choose Fix Tiffin"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF">
+
+                        </Button>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp">
+
+                            <ImageView
+                                android:id="@+id/img"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="180dp"
+                                android:src="@drawable/no_image">
+
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:elevation="10dp"
+                            android:transitionName="tvLogin"
+                            android:text="Terms"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/price_per"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="Price per Tiffin"
+                            android:textColorHint="#e95d5d"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/price_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="monthly Price per Tiffin"
+                            android:textColorHint="#e95d5d"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/price_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="Yearly Price per Tiffin"
+                            android:textColorHint="#e95d5d"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/price_week"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="Weekly Price per Tiffin"
+                            android:textColorHint="#e95d5d"
+                            android:inputType="text" />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:elevation="10dp"
+                            android:transitionName="tvLogin"
+                            android:text="@string/text"
+                            android:textColor="#000000"
+
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                         >
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="60dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:elevation="10dp"
+                                android:transitionName="tvLogin"
+                                android:text="Item Name"
+                                android:textColor="#000000"
+
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:elevation="10dp"
+                                android:transitionName="tvLogin"
+                                android:text="Price Per Item"
+                                android:textColor="#000000"
+
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/e1_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="Item Name 1"
+                                android:textColorHint="#e95d5d"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/e1_price"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/edit"
+                                android:inputType="numberDecimal"
+
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/e2_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="Item Name 2"
+                                android:textColorHint="#e95d5d"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/e2_price"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/edit"
+                                android:inputType="numberDecimal"
+
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/e3_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="Item Name 3"
+                                android:textColorHint="#e95d5d"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/e3_price"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/edit"
+                                android:inputType="numberDecimal"
+
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/e4_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="Item Name 4"
+                                android:textAlignment="center"
+                                android:textColorHint="#e95d5d"
+                                android:inputType="text"
+                                android:gravity="center_horizontal" />
+
+                            <EditText
+                                android:id="@+id/e4_price"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/edit"
+                                android:inputType="numberDecimal"
+
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/e5_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="Item Name 5"
+                                android:textColorHint="#e95d5d"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/e5_price"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/edit"
+                                android:inputType="numberDecimal"
+
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000">
+
+                </Button>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="#fff"
+    app:contentPadding="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                >
+                <TableRow>
+                    <TextView
+                        android:text="Price Per Tiffin"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_per_tiffin"
+                        android:text="per tiffin"
+                        android:textSize="14sp"
+                        android:textColor="#ff3333"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Price per month"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_per_month"
+                        android:text="month"
+                        android:textSize="14sp"
+                        android:textColor="#ff3333"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Price Per Year"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_per_year"
+                        android:text="year"
+                        android:textSize="14sp"
+                        android:textColor="#ff3333"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Price Per Week"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_per_week"
+                        android:text="week"
+                        android:textSize="14sp"
+                        android:textColor="#ff3333"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/uisquare_reg"
+                android:text="Place Order"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
